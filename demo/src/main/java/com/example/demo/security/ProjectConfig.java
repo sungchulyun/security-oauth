@@ -6,7 +6,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 
 @Configuration
-public class ProjectConfig {
+public class ProjectConfig extends WebSecurityConfigurerAdapter{
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder(){

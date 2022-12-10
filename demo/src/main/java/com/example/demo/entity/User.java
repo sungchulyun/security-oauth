@@ -20,12 +20,12 @@ public class User {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    private EncrytionAlgorithm algorithm;
+    private EncryptionAlgorithm algorithm;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private List<Authority> authorities;
 
-    public enum EncrytionAlgorithm {
-        BCRYPT, SCRYPT
+    public enum EncryptionAlgorithm {
+        BCRYPT
     }
 }
