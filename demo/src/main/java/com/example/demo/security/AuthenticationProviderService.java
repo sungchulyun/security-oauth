@@ -1,5 +1,6 @@
 package com.example.demo.security;
 
+import com.example.demo.service.JpaUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
