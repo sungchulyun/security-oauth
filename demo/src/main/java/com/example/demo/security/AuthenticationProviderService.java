@@ -2,6 +2,7 @@ package com.example.demo.security;
 
 import com.example.demo.service.JpaUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,6 +19,7 @@ public class AuthenticationProviderService implements AuthenticationProvider {
     private JpaUserDetailsService userDetailsService;
 
     @Autowired
+    @Lazy
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
